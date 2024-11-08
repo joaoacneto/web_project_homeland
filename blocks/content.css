@@ -8,7 +8,7 @@
 }
 
 .content__title {
-  width: 830px;
+  max-width: 830px;
   /* height: 116px; */
   font-family: "Inter";
   font-size: 54px;
@@ -19,7 +19,7 @@
 }
 
 .content__subtitle {
-  width: 738px;
+  max-width: 738px;
   /* height: 68px; */
   font-family: "Inter";
   font-size: 24px;
@@ -30,7 +30,7 @@
 }
 
 .content__author {
-  width: 732px;
+  max-width: 732px;
   /* height: 34px; */
   font-family: "Inter";
   font-size: 24px;
@@ -41,7 +41,7 @@
 }
 
 .content__text {
-  width: 722px;
+  max-width: 722px;
   /* height: 182px; */
   font-family: "Inter";
   font-size: 16px;
