@@ -1,9 +1,30 @@
 .content {
   max-width: 1280px;
 }
+.content__copyright {
+  color: #fff;
+  width: 166px;
+  height: 16px;
+  margin: auto;
+  margin: 0 auto 24px;
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: right;
+}
+.content__copyright {
+  margin: 0 auto 24px;
+}
 
 @media screen and (max-width: 1024px) {
   .content {
     max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .content__copyright {
+    line-height: 14px;
   }
 }

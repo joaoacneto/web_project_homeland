@@ -6,8 +6,6 @@
   display: flex;
   flex-direction: column;
 }
-/*
-mudar as content pra intro e reajustar tudo que ta na .intro pra dentro do content */
 
 .intro__title {
   max-width: 830px;
@@ -51,20 +49,6 @@ mudar as content pra intro e reajustar tudo que ta na .intro pra dentro do conte
   margin: 0;
 }
 
-.content__copyright {
-  color: #fff;
-  width: 166px;
-  height: 16px;
-  margin: auto;
-  margin: 0 auto 24px;
-
-  font-family: "Inter";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16px;
-  text-align: right;
-}
-
 @media screen and (max-width: 1024px) {
   .intro {
     max-width: 720px;
@@ -89,10 +73,6 @@ mudar as content pra intro e reajustar tudo que ta na .intro pra dentro do conte
   .intro__text {
     margin: 0 auto 0;
     max-width: 720px;
-  }
-
-  .content__copyright {
-    margin: 0 auto 24px;
   }
 }
 
@@ -121,9 +101,5 @@ mudar as content pra intro e reajustar tudo que ta na .intro pra dentro do conte
   .intro__text {
     margin: 0 auto 0;
     max-width: 288px;
-  }
-
-  .content__copyright {
-    line-height: 14px;
   }
 }
