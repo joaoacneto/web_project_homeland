@@ -1,0 +1,194 @@
+.city {
+  display: grid;
+  /* max-width: 984px; */
+  /* grid-template-columns: 460px 1fr;
+  grid-template-rows: auto auto 1fr; */
+  grid-template-areas:
+    "title artist"
+    "photo text"
+    "button text"
+    ". text";
+
+  grid-gap: 48px 40px;
+  margin-bottom: 80px;
+}
+
+.city__name {
+  grid-area: title;
+  max-width: 460px;
+  font-family: "Inter";
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 76px;
+  text-align: left;
+  text-underline-position: from-font;
+  margin: 0 0;
+}
+
+.city__title {
+  grid-area: artist;
+  max-width: 456px;
+  align-self: end;
+  margin: 0 0;
+}
+
+.city__artists-title {
+  max-width: 484px;
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+  letter-spacing: 0.12em;
+  color: #aaaaaa;
+  margin: 0 0;
+}
+
+.city__artists-subtitle {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  margin-top: 8px;
+  margin-bottom: 0;
+  /* max-width: 484px; */
+}
+
+.city__image {
+  grid-area: photo;
+  max-width: 460px;
+  margin: 0 0;
+  max-width: 460px;
+  box-shadow: 5px 5px 10px 0px #00000040;
+}
+
+.city__image:hover {
+  background: #000000;
+  opacity: 0.5;
+}
+
+.city__texts {
+  max-width: 484px;
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.city__text {
+  margin: 0;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29.34px;
+  text-align: left;
+  text-underline-position: from-font;
+}
+
+.city__button {
+  max-width: 356px;
+  padding: 13px 20px 13px 20px;
+  gap: 10px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
+  box-shadow: 5px 5px 10px 0px #00000040;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.78px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.city__button:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 120, 254, 0.25) 0%,
+    rgba(0, 58, 123, 0.25) 99.98%
+  );
+}
+
+@media screen and (max-width: 1024px) {
+  .city {
+    max-width: 720px;
+    column-gap: 28px;
+    margin: 0 0 72px;
+    grid-template-columns: 340px 1fr;
+    grid-template-rows: 1fr 340px;
+  }
+
+  .city__name {
+    max-width: 340px;
+    font-family: Inter;
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 46px;
+  }
+  .city__image {
+    max-width: 340px;
+  }
+
+  .city__texts {
+    max-width: 352px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26.08px;
+    text-align: left;
+  }
+  .city__title {
+    max-width: 352px;
+  }
+
+  .city__artists-title {
+    max-width: 352px;
+  }
+  .city__button {
+    padding: 13px 0;
+  }
+}
+@media screen and (max-width: 544px) {
+  .city {
+    max-width: 320px;
+    grid-template-areas:
+      "title"
+      "artist"
+      "photo"
+      "text"
+      "button";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+  }
+
+  .city__name {
+    max-width: 288px;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 35px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .city__image {
+    max-width: 320px;
+  }
+
+  .city__text {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .city__texts {
+    max-width: 320px;
+  }
+  .city__title {
+    max-width: 288px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .city__artists-title {
+    max-width: 288px;
+    margin-left: 0;
+  }
+}
